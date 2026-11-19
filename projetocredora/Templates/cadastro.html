@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <title>Tela de cadastro</title>
+</head>
+<body>
+
+    <header class="logo">
+        <img src="{{ url_for('static', filename='img/logo_credora.png') }}" alt="Logo credora">
+    </header>
+
+    {% with mensagens = get_flashed_messages(with_categories=true) %}
+    {% if mensagens %}
+        <div class="mensagens">
+        {% for categoria, texto in mensagens %}
+        <div class="alerta alerta-{{ categoria }}" role="alert">{{ texto }}</div>
+        {% endfor %}
+        </div>
+    {% endif %}
+    {% endwith %}
+
+    <section class="login cadastro-container">
+        <h1>Criar conta</h1>
+        <p>Preencha seus dados para calibrar sua capacidade de pagamento com precisão analítica.</p>
+
+        <form action="{{ url_for('pagina_cadastro') }}" method="POST">
+
+            <div class="campo-grupo">
+                <label>Nome completo</label>
+                <input type="text" name="nome" placeholder="Ex: Carlos Eduardo Silveira" required>
+            </div>
+
+            <div class="campo-grupo">
+                <label>E-mail corporativo ou pessoal</label>
+                <input type="text" name="email" placeholder="carlos@exemplo.com.br" required>
+            </div>
+
+            <div class="linha-dupla">
+                <div class="campo-grupo">
+                    <label>Senha de acesso <span class="dica">Min. 8 dígitos</span></label>
+                    <input type="password" id="campo_senha" name="senha" placeholder="••••••••" required>
+                    <div style="margin-top: 5px; margin-bottom: 10px; text-align: left; display: flex; align-items: center; gap: 8px;">
+                        <input type="checkbox" id="ver_senha" style="width: auto; display: inline-block; cursor: pointer;" onchange="document.getElementById('campo_senha').type = this.checked ? 'text' : 'password'">
+                        <label for="ver_senha" style="font-size: 11px; color: #b0c4de; font-weight: normal; cursor: pointer; margin: 0;">Mostrar senha</label>
+                    </div>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Confirmar senha <span class="dica">Min. 8 dígitos</span></label>
+                    <input type="password" id="campo_confirmar" name="confirmar_senha" placeholder="••••••••" required>
+                    <div style="margin-top: 5px; margin-bottom: 10px; text-align: left; display: flex; align-items: center; gap: 8px;">
+                        <input type="checkbox" id="ver_confirmar" style="width: auto; display: inline-block; cursor: pointer;" onchange="document.getElementById('campo_confirmar').type = this.checked ? 'text' : 'password'">
+                        <label for="ver_confirmar" style="font-size: 11px; color: #b0c4de; font-weight: normal; cursor: pointer; margin: 0;">Mostrar senha</label>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subtitulo-secao">PARÂMETROS FINANCEIROS INICIAIS</h3>
+
+            <div class="linha-dupla">
+                <div class="campo-grupo">
+                    <label>Renda mensal líquida</label>
+                    <input type="text" name="renda_mensal" placeholder="R$ 0,00" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Despesas fixas mês</label>
+                    <input type="text" name="despesas_mensal" placeholder="R$ 0,00" required>
+                </div>
+            </div>
+
+            <div class="aviso-lgpd">
+                Seus dados estão protegidos de acordo com as normas da LGPD e utilizados unicamente para análise de risco ponderado.
+            </div>
+
+            <button class="botao-entrar" type="submit">Cadastrar <span>↑</span></button>
+        </form>
+
+        <a class="cor" href="login">Já possui uma conta? Entrar</a>
+    </section>
+
+</body>
+</html>

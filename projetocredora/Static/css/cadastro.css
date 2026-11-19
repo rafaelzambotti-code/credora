@@ -1,0 +1,66 @@
+.cadastro-container {
+    max-width: 800px !important;
+    padding: 40px 50px !important;
+}
+
+.cadastro-container h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.cadastro-container p {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+
+.linha-dupla {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.linha-dupla .campo-grupo {
+    flex: 1;
+}
+
+.campo-grupo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.campo-grupo label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo-grupo .dica {
+    font-size: 10px;
+    color: #8fa3bc;
+    font-weight: normal;
+}
+
+.subtitulo-secao {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #9cb3d0;
+    margin: 15px 0 10px 0;
+    text-align: left;
+}
+
+.aviso-lgpd {
+    background-color: #23685e;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: left;
+}

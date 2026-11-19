@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    background: #EAF0F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo-img{
+    width: 100px;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #627187;
+}
+
+.btn-login{
+    background-color: #16365C;
+    color: white;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.faixa{
+    background-color: #16365C;
+    color: white;
+    text-align: center;
+}
+
+.quem-somos{
+    border-bottom: 2px solid #16365C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.texto {
+    width: 55%;
+    max-width: 500px;
+    padding: 50px 80px;
+}
+
+.imagem {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img {
+    width: 250px;
+    height: auto;
+}
+
+
+.nossas-propostas {
+    border-bottom: 2px solid #16365C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 50px 80px;
+}
+
+.nossas-propostas .texto {
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+    text-align: left;
+}
+
+.propostas-lista {
+    color: #627187;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+
+.propostas-lista li {
+    margin-bottom: 12px;
+}
+
+
+.acesso{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+.acesso .texto {
+    text-align: center;
+    padding: 20px;
+}
+
+.celular img,
+.computador img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}

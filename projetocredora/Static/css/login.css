@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #EAF0F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+
+.login{
+    background-color: #122c4a;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 50px 60px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.login p {
+    font-size: 13px;
+    color: #b0c4de;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+
+.login form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.login input {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    background-color: #23685e;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.login input::placeholder {
+    color: #a3ded6;
+}
+
+
+.botao-entrar {
+    background-color: #122c4a;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 14px;
+    border-radius: 30px;
+    border: 2px solid white;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    transition: background 0.2s;
+}
+
+.botao-entrar:hover {
+    background-color: #1a3d66;
+}
+
+
+.cor {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    letter-spacing: 0.5px;
+}
+
+.cor:hover {
+    text-decoration: underline;
+}
+
+
+.mensagens {
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 15px;
+}
+
+.alerta {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.alerta-danger, .alerta-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alerta-success {
+    background-color: #d4edda;
+    color: #155724;
+}

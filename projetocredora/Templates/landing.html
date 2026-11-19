@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+    <title>Credora</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo_credora.png') }}" alt="Logo credora" class="logo-img">
+        </div>
+
+        <nav class="menu">
+            <a href="#">Quem somos</a>
+            <a href="#">Nossas propostas</a>
+            <a href="#">Acesse de qualquer lugar</a>
+        </nav>
+
+            <a href="login" class="btn-login">LOGIN</a>
+    </header>
+
+        <div class="faixa">PROJETO ACADEMICO 2026</div>
+
+        <br><section class="quem-somos"> 
+            <div class="texto">
+                <h1>QUEM SOMOS?</h1><br>
+                    <p>
+                        A credora é um sistema de simulação, analise e gestão 
+                        de crédito voltado para pequenos negócios,
+                        microempreendedores individuais, (MEIs) e empresas de pequeno porte 
+                    </p>
+            </div>
+            <div class="imagem">
+                <img src="{{ url_for('static', filename='img/uniforme_credora-landing.png') }}" alt="Quem somos">
+            </div>
+        </section>
+
+        <br><section class="nossas-propostas">
+            <div class="texto">
+                <h1>CONHEÇA NOSSAS PROPOSTAS</h1>
+
+                <ul class="propostas-lista">
+                    <li>Histórico de simulações: Consulte e acompanhe simulações realizadas anteriormente</li>
+                    <li>Informações de negócio: Acesse os dados financeiros e cadastrais do negócio</li>
+                    <li>Indicadores financeiros: Visualize informações relevantes para apoiar a análise de crédito</li>
+                    <li>Acompanhamento de propostas: Organize e acompanhe o andamento das soliçitações</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <br><section class="acesso">
+            <h1>ACESSO DE QUALQUER LUGAR</h1>
+
+            <div class="celular">
+                <img src="{{ url_for('static', filename='img/celular_credora.png') }}" alt="app pelo celular">
+            </div>
+
+            <div class="texto">
+                <p>
+                    Você pode acessar nossos serviços de qualquer jeito, seja celular ou computador
+                </p>
+            </div>
+
+            <div class="computador">
+                <img src="{{ url_for('static', filename='img/computador_credora.png') }}" alt="app pelo computador">
+            </div>
+        </section>
+</body>
+</html>
